@@ -1,24 +1,11 @@
-# README
+# 作成機能説明
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## CSV インポート機能
 
-Things you may want to cover:
+"app/models/import_csv.rb"に CSV インポートするメソッドを記述
+CSV ファイル設置箇所 → "db/csv_data/csv_data.csv"
 
-* Ruby version
+## rake タスク追加
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+上記 CSV インポート機能を rake タスクに追加。"lib/tasks/csv_import.rake"に記載
+rake csv_import:users 　で実行
