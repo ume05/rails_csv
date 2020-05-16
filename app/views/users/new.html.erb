@@ -1,0 +1,7 @@
+<p>新規投稿</p>
+<%= form_for @user, url:'/users', html:{method: :post} do |f| %>
+<p>お名前:<%= f.text_field :name %></p>
+<p>年齢:<%= f.text_field :age %></p>
+<p>住所:<%= f.text_field :address %></p>
+<%= f.submit "送信" %>
+<% end %>
